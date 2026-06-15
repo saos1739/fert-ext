@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Detector de Sorteos",
+  "version": "1.0",
+  "description": "Notifica cuando aparece un cartel de SORTEO ACTIVO.",
+  "permissions": [
+    "notifications"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://agusbobtracker.live/*",
+        "*://*.agusbobtracker.live/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
